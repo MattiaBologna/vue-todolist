@@ -27,7 +27,7 @@
                     </div>
                     <div class="card__body">
                         <ul class="todo__list">
-                            <li v-for="todo in todos">{{todo.text}}</li>
+                            <li v-for="todo in todos" :class="todo.done ? 'strikethrough' : ''">{{todo.text}}</li>
                         </ul>
                     </div>
                 </div>
