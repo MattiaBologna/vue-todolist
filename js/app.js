@@ -27,7 +27,6 @@
     methods: {
         addTodo() {
             if (this.todoInput !== '') {
-                console.log(this.todoInput)
                 const newTodo = {
                     text: this.todoInput,
                     done: false

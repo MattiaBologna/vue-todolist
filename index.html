@@ -25,6 +25,7 @@
                 <div class="todo__container">
                     <div class="card__header">
                         <input v-model.trim="todoInput" type="text" placeholder="Nuova todo..." @keyup.enter="addTodo">
+                        <button @click="addTodo">ADD</button>
                     </div>
                     <div class="card__body">
                         <ul class="todo__list">
