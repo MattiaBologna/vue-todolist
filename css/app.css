@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: "Lato", sans-serif;
+}
+
+.main__header {
+    background-color: coral;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.main__content {
+    margin: 40px 0;
+}
+
+.todo__container {
+    max-width: 800px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.card__header {
+    background-color: coral;
+    color: white;
+}
