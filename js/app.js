@@ -3,6 +3,7 @@
   createApp({
     data() {
       return {
+        todoInput: '',
         todos: [
             {
                 text: 'Fare la spesa',
@@ -24,6 +25,18 @@
       }
     },
     methods: {
-
+        addTodo() {
+            if (this.todoInput !== '') {
+                console.log(this.todoInput)
+                const newTodo = {
+                    text: this.todoInput,
+                    done: false
+                }
+                this.todos.push(newTodo)
+            
+            // svuota l'input
+            this.todoInput = ''
+            }
+        }
     }
   }).mount('#app')
