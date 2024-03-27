@@ -4,6 +4,7 @@
     data() {
       return {
         todoInput: '',
+        strikethrough: '.strikethrough',
         todos: [
             {
                 text: 'Fare la spesa',
@@ -36,6 +37,9 @@
             // svuota l'input
             this.todoInput = ''
             }
+        },
+        removeTodo(i) {
+            this.todos.splice(i, 1)
         }
     }
   }).mount('#app')
