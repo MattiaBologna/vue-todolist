@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30a5d231e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
@@ -23,11 +24,18 @@
             <section class="todo__section">
                 <div class="todo__container">
                     <div class="card__header">
-                        HEAD
+                        <input type="text" placeholder="Nuova todo...">
                     </div>
                     <div class="card__body">
                         <ul class="todo__list">
-                            <li v-for="todo in todos" :class="todo.done ? 'strikethrough' : ''">{{todo.text}}</li>
+                            <li 
+                            v-for="todo in todos" 
+                            class="todo__item"
+                            :class="todo.done ? 'strikethrough' : ''"
+                            >
+                                {{todo.text}}
+                                <i @click="todo.done = !todo.done" class="fa-solid fa-x cliccableX"></i>
+                            </li>
                         </ul>
                     </div>
                 </div>

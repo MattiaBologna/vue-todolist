@@ -41,3 +41,16 @@ body {
 .strikethrough {
     text-decoration: line-through;
 }
+
+.cliccableX {
+    text-decoration: none;
+}
+
+.todo__item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    padding: 12px;
+    font-size: 18px;
+}
