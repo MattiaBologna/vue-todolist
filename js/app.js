@@ -5,6 +5,7 @@
       return {
         todoInput: '',
         strikethrough: '.strikethrough',
+        hoverClass: false,
         todos: [
             {
                 text: 'Fare la spesa',

@@ -1,3 +1,8 @@
+:root {
+    --orange-dark: coral;
+    --orange-light: rgb(252, 186, 161);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +19,7 @@ body {
 }
 
 .main__header {
-    background-color: coral;
+    background-color: var(--orange-dark);
     color: white;
     font-size: 40px;
     font-weight: bold;
@@ -36,7 +41,7 @@ body {
 }
 
 .card__header {
-    background-color: coral;
+    background-color:  var(--orange-dark);
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -74,11 +79,15 @@ body {
 
 .add__button {
     background-color: antiquewhite;
-    border: none;
+    border: none;   
     border-radius: 10px;
     padding: 10px 5px;
     color: red;
     font-weight: 500;
+}
+
+.add__button:hover {
+    background: linear-gradient(antiquewhite, var(--orange-light));   
 }
 
 .todo__input:focus-visible {
@@ -96,7 +105,7 @@ body {
 
 
 .legend > * {
-    background-color: rgb(252, 186, 161);
+    background-color: var(--orange-light);
     color: grey;    
     text-align: center;
     padding: 5px 10px;

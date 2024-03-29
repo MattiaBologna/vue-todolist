@@ -28,7 +28,7 @@
                         <button @click="addTodo" class="add__button">Add new Task</button>
                     </div>
                     <div class="card__body">
-                        <ul class="todo__list" v-if="todos.length !== 0">
+                        <ul class="todo__list" v-if="todos.length !== 0" @mouseover="hoverClass = true" @mouseleave="hoverClass = false" >
                             <li 
                             v-for="(todo, i) in todos" 
                             class="todo__item"  
@@ -41,7 +41,7 @@
                     </div>
                 </div>
 
-                <div class="legend">
+                <div v-if="hoverClass" class="legend">
                     <p>Click to mark as done</p>
                     <p>Click the X to delete</p>
                 </div>
